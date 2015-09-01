@@ -1,0 +1,38 @@
+@Debussy.exe rc file Version 1.0
+[KeyNote]
+Line1 = invoke directory: Z:\verilogstudy\ripple_carry_counter
+Line2 = command line: Z:\verilogstudy\ripple_carry_counter\counter.v Z:\verilogstudy\ripple_carry_counter\counter_tb.v Z:\verilogstudy\ripple_carry_c
+Line3 = current trace scope: COUNTER_TB.counter.tff0
+Line4 = memo:
+[hb]
+viewport = 0 0 1378 754 225 556 107 1358
+activeNode = "COUNTER_TB.counter.tff0"
+interactiveMode = False
+viewType = Source
+simulatorMode = False
+sourceBeginLine = 0
+baMode = False
+srcLineNum = True
+syncSignal = False
+traceMode = Hierarchical
+showTraceInSchema = True
+paMode = False
+traceCrossHier = True
+traceIncTopPort = False
+leadingZero = False
+showSubprog = True
+Scope1 = "COUNTER_TB.counter.tff0"
+Scope2 = "COUNTER_TB.counter.tff0.dff0"
+Scope3 = "COUNTER_TB.counter"
+Scope4 = "COUNTER_TB"
+sdfCheckUndef = FALSE
+[imp.design1]
+dbEnum =  oh
+invokeDir = Z:\verilogstudy\ripple_carry_counter
+design = DebussyLib
+hostCommand = hostCommand Z:\verilogstudy\ripple_carry_counter\counter.v Z:\verilogstudy\ripple_carry_counter\counter_tb.v Z:\verilogstudy\ripple_carry_counter\d_ff.v Z:\verilogstudy\ripple_carry_counter\t_ff.v
+[mdaWindow]
+count = 0
+[memoryWindow]
+count = 0
+Format = 
