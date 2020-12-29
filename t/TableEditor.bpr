@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.05.03"/>
+    <PROJECT value="..\..\Bin\TableEditor.exe"/>
+    <OBJFILES value="..\..\Obj\TableEditor\TableEditor.obj ..\..\Obj\TableEditor\Done.obj 
+      ..\..\Obj\TableEditor\Register.obj ..\..\Obj\TableEditor\CopyForm.obj 
+      ..\..\Obj\TableEditor\ReplaceConfirmForm.obj 
+      ..\..\Obj\TableEditor\BuildOptionsForm.obj 
+      ..\..\Obj\TableEditor\PageTypePlugin.obj 
+      ..\..\Obj\TableEditor\XMLParser.obj ..\..\Obj\TableEditor\TdfParser.obj 
+      ..\..\Obj\TableEditor\RegRestorer.obj ..\..\Obj\TableEditor\MainForm.obj 
+      ..\..\Obj\TableEditor\ChipDoc.obj ..\..\Obj\TableEditor\ReadWriteData.obj 
+      ..\..\Obj\TableEditor\Utils.obj ..\..\Obj\TableEditor\TableCheckForm.obj 
+      ..\..\Obj\TableEditor\libcsv.obj ..\..\Obj\TableEditor\ImportChoice.obj"/>
+    <RESFILES value="TableEditor.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) CopyForm.dfm ReplaceConfirmForm.dfm BuildOptionsForm.dfm 
+      MainForm.dfm TableCheckForm.dfm ImportChoice.dfm"/>
+    <LIBFILES value="..\xlsxio\bin\libxlsxio_read.lib"/>
+    <LIBRARIES value="XMLParser.lib NewDBNavigator.lib VCLBDE50.lib VCLX50.lib RXCTL4.lib 
+      RXDB4.lib vclado50.lib Vcldb50.lib Vcl50.lib"/>
+    <SPARELIBS value="Vcl50.lib Vcldb50.lib vclado50.lib RXDB4.lib RXCTL4.lib VCLX50.lib 
+      VCLBDE50.lib NewDBNavigator.lib XMLParser.lib"/>
+    <PACKAGES value="Vcl50.bpi Vclx50.bpi Vcldb50.bpi vclado50.bpi vcldbx50.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="tlink32"/>
+    <USERDEFINES value="DEBUG;_UI_DETACHED_;_TFC_LEGACY_API;_WIN32;_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="TableEditor.cpp"/>
+    <INCLUDEPATH value="&quot;D:\Program Files (x86)\Borland\CBuilder5\Projects\&quot;;$(BCB)\include;$(BCB)\include\vcl;rx\Units;DBNavigatorEx;..\ResBuilder;RichView;XML;..\..\TFCAPI\inc;..\xlsxio\include"/>
+    <LIBPATH value="&quot;D:\Program Files (x86)\Borland\CBuilder5\Projects\&quot;;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;rx\Units;..\..\Lib\Win32\BCB"/>
+    <WARNINGS value="-w-par"/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-src_suffix cpp -DDEBUG -D_UI_DETACHED_ -D_TFC_LEGACY_API -D_WIN32 
+      -D_DEBUG -I&quot;D:\Program Files (x86)\Borland\CBuilder5\Projects\.&quot; 
+      -I$(BCB)\include -I$(BCB)\include\vcl -Irx\Units -IDBNavigatorEx 
+      -I..\ResBuilder -IRichView -IXML -I..\..\TFCAPI\inc -I..\xlsxio\include -boa"/>
+    <CFLAG1 value="-Od -H=TableEditor.tds -Vx -Ve -X- -r- -a8 -6 -b- -k -y -v -vi- -c -tW -tWM"/>
+    <PFLAGS value="-N2..\..\Obj\TableEditor -N0..\..\Obj\TableEditor -$Y+ -$W -$O- -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zi"/>
+    <LFLAGS value="-I..\..\Obj\TableEditor -D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+  </LINKER>
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1033
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=Kiwi-Image Co,LTD
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[Excluded Packages]
+$(BCB)\Bin\applet50.bpl=Borland Control Panel Applet Package
+
+[HistoryLists\hlIncludePath]
+Count=30
+Item0=D:\Program Files (x86)\Borland\CBuilder5\Projects\;$(BCB)\include;$(BCB)\include\vcl;rx\Units;DBNavigatorEx;..\ResBuilder;RichView;XML;..\..\TFCAPI\inc;..\xlsxio\include
+Item1=D:\Program Files (x86)\Borland\CBuilder5\Projects\;$(BCB)\include;$(BCB)\include\vcl;rx\Units;DBNavigatorEx;..\ResBuilder;RichView;XML;..\..\TFCAPI\inc
+Item2=D:\Program Files (x86)\Borland\CBuilder5\Projects;$(BCB)\include;$(BCB)\include\vcl;rx\Units;DBNavigatorEx;..\ResBuilder;RichView;XML;..\..\TFCAPI\inc
+Item3=$(BCB)\include;$(BCB)\include\vcl;rx\Units;DBNavigatorEx;..\ResBuilder;RichView;XML;..\..\TFCAPI\inc
+Item4=$(BCB)\include;$(BCB)\include\vcl;rx\Units;DBNavigatorEx;..\..\inc;..\ResBuilder;RichView;XML
+Item5=$(BCB)\include;$(BCB)\include\vcl;rx\Units;DBNavigatorEx;..\..\inc;..\ResBuilder;RichView
+Item6=$(BCB)\include;$(BCB)\include\vcl;rx\Units;DBNavigatorEx;C:\TFCSDK\inc;..\ResBuilder;RichView
+Item7=C:\Program Files\Borland\CBuilder5\Projects\;D:\Borland\CBuilder5\Projects\;$(BCB)\include;$(BCB)\include\vcl;rx\Units;DBNavigatorEx;..\..\..\inc;..\..\..\inc\win32;..;C:\dptvsdk\Tool\Restool\ResBuild2\XML\;C:\dptvsdk\Tool\Restool\ResBuild2\;RichView
+Item8=C:\Program Files\Borland\CBuilder5\Projects;D:\Borland\CBuilder5\Projects\;$(BCB)\include;$(BCB)\include\vcl;rx\Units;DBNavigatorEx;..\..\..\inc;..\..\..\inc\win32;..;C:\dptvsdk\Tool\Restool\ResBuild2\XML\;C:\dptvsdk\Tool\Restool\ResBuild2\;RichView
+Item9=D:\Borland\CBuilder5\Projects\;$(BCB)\include;$(BCB)\include\vcl;rx\Units;DBNavigatorEx;..\..\..\inc;..\..\..\inc\win32;..;C:\dptvsdk\Tool\Restool\ResBuild2\XML\;C:\dptvsdk\Tool\Restool\ResBuild2\;RichView
+Item10=D:\Borland\CBuilder5\Projects\;$(BCB)\include;$(BCB)\include\vcl;rx\Units;DBNavigatorEx;..\..\..\inc;..\..\..\inc\win32;..;C:\dptvsdk\Tool\Restool\ResBuild2\XML;C:\dptvsdk\Tool\Restool\ResBuild2\;RichView
+Item11=D:\Borland\CBuilder5\Projects\;$(BCB)\include;$(BCB)\include\vcl;rx\Units;DBNavigatorEx;..\..\..\inc;..\..\..\inc\win32;..;..\..\Restool\ResBuild2\xml;..\..\Restool\ResBuild2;RichView
+Item12=D:\Borland\CBuilder5\Projects\;$(BCB)\include;$(BCB)\include\vcl;rx\Units;DBNavigatorEx;..\..\..\inc;..\..\..\inc\win32;..;..\..\Restool\ResBuild2\xml;..\..\Restool\ResBuild2;C:\DPTVSDK\Tool\DPTVTools\ChipDebugger\RichView
+Item13=D:\Borland\CBuilder5\Projects\;$(BCB)\include;$(BCB)\include\vcl;rx\Units;DBNavigatorEx;..\..\..\inc;..\..\..\inc\win32;..;..\..\Restool\ResBuild2\xml;..\..\Restool\ResBuild2
+Item14=D:\Borland\CBuilder5\Projects;$(BCB)\include;$(BCB)\include\vcl;rx\Units;DBNavigatorEx;..\..\..\inc;..\..\..\inc\win32;..;..\..\Restool\ResBuild2\xml;..\..\Restool\ResBuild2
+Item15=$(BCB)\include;$(BCB)\include\vcl;rx\Units;DBNavigatorEx;..\..\..\inc;..\..\..\inc\win32;..;..\..\Restool\ResBuild2\xml;..\..\Restool\ResBuild2
+Item16=$(BCB)\include;$(BCB)\include\vcl;rx\Units;DBNavigatorEx;..\..\..\inc;..\..\..\inc\win32;..;..\..\Restool\ResBuild2\xml;..\..\Restool\ResBuild2\
+Item17=$(BCB)\include;$(BCB)\include\vcl;rx\Units;DBNavigatorEx;..\..\..\inc;..\..\..\inc\win32;..;..\..\Restool\ResBuild2\xml
+Item18=$(BCB)\include;$(BCB)\include\vcl;rx\Units;DBNavigatorEx;..\..\..\inc;..\..\..\inc\win32;..;C:\dptvsdk\Tool\Restool\ResBuild2\xml
+Item19=$(BCB)\include;$(BCB)\include\vcl;rx\Units;DBNavigatorEx;..\..\..\inc;..\..\..\inc\win32;..
+Item20=$(BCB)\include;$(BCB)\include\vcl;rx\Units;DBNavigatorEx;..\..\..\inc;..\..\..\inc\win32
+Item21=$(BCB)\include;$(BCB)\include\vcl;rx\Units;DBNavigatorEx;..\..\..\inc;..\..\..\inc\win32;C:\Exsdk\Tool\ExTool\ChipDebugger\rx\Units\
+Item22=$(BCB)\include;$(BCB)\include\vcl;rx\Units;DBNavigatorEx;..\..\..\inc;..\..\..\inc\win32;C:\Exsdk\Tool\ExTool\ChipDebugger\rx\Units
+Item23=$(BCB)\include;$(BCB)\include\vcl;rx\Units;DBNavigatorEx;C:\dptvsdk\inc\;C:\dptvsdk\inc\win32\
+Item24=$(BCB)\include;$(BCB)\include\vcl;rx\Units;DBNavigatorEx;C:\dptvsdk\inc;C:\dptvsdk\inc\win32
+Item25=D:\Borland\CBuilder5\Projects\;$(BCB)\include;$(BCB)\include\vcl;rx\Units;DBNavigatorEx
+Item26=D:\Borland\CBuilder5\Projects;$(BCB)\include;$(BCB)\include\vcl;rx\Units;DBNavigatorEx
+Item27=$(BCB)\include;$(BCB)\include\vcl;rx\Units;DBNavigatorEx
+Item28=$(BCB)\include;$(BCB)\include\vcl;rx\Units;C:\EXSDK\Tool\EXTool\ChipDebugger\DBNavigatorEx
+Item29=$(BCB)\include;$(BCB)\include\vcl;rx\Units
+
+[HistoryLists\hlLibraryPath]
+Count=10
+Item0=D:\Program Files (x86)\Borland\CBuilder5\Projects\;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;rx\Units;..\..\Lib\Win32\BCB
+Item1=D:\Program Files (x86)\Borland\CBuilder5\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;rx\Units;..\..\Lib\Win32\BCB
+Item2=$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;rx\Units;..\..\Lib\Win32\BCB
+Item3=$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;rx\Units;C:\TFCSDK\Lib\Win32\BCB
+Item4=$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;rx\Units
+Item5=C:\Program Files\Borland\CBuilder5\Projects\;D:\Borland\CBuilder5\Projects\;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;rx\Units
+Item6=C:\Program Files\Borland\CBuilder5\Projects;D:\Borland\CBuilder5\Projects\;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;rx\Units
+Item7=D:\Borland\CBuilder5\Projects\;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;rx\Units
+Item8=D:\Borland\CBuilder5\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;rx\Units
+Item9=$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=11
+Item0=DEBUG;_UI_DETACHED_;_TFC_LEGACY_API;_WIN32;_DEBUG
+Item1=DEBUG;_UI_DETACHED_;_TFC_LEGACY_API;_WIN32;_DEBUG;_MSC_VER=1500
+Item2=DEBUG;_UI_DETACHED_;_TFC_LEGACY_API;_WIN32
+Item3=DEBUG;_UI_DETACHED_;_TFC_LEGACY_API;_DEBUG;_WIN32
+Item4=DEBUG;_UI_DETACHED_;_TFC_LEGACY_API;_DEBUG
+Item5=DEBUG;_UI_DETACHED_;_TFC_LEGACY_API
+Item6=DEBUG;_UI_DETACHED_
+Item7=DEBUG
+Item8=DEBUG;_DEBUG
+Item9=_DEBUG;DEBUG
+Item10=_DEBUG
+
+[HistoryLists\hlIntOutputDir]
+Count=2
+Item0=..\..\Obj\TableEditor
+Item1=..\..\Obj\TableEditor\
+
+[HistoryLists\hlFinalOutputDir]
+Count=7
+Item0=..\..\Bin\
+Item1=..\..\Bin
+Item2=..\..\BinSX\
+Item3=..\..\BinSX
+Item4=C:\TFCSDK\Bin
+Item5=..\..\..\bin\
+Item6=c:\lxsdk\bin
+
+[Debugging]
+DebugSourceDirs=
+
+[Parameters]
+RunParams=
+HostApplication=E:\Software\TVTool\Bin\TableEditor.exe
+RemoteHost=
+RemotePath=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+  </IDEOPTIONS>
+</PROJECT>
