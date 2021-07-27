@@ -3,34 +3,35 @@ module tb;
 
     reg clk = 1'b0;
 
-    reg areset = 1'b0;
+    reg reset = 1'b0;
 
     reg in = 1'b0;
 
-    always #4 clk = ~clk;
+    always #2 clk = ~clk;
 
     wire out;
 
     top_module top(
         clk,
         in,
-        areset,
+        reset,
         out);
 
     initial
     begin
-        areset = 1'b0;
-        #5 areset = 1'b1;
-        #5 areset = 1'b0;
+        reset = 1'b0;
+        #5 reset = 1'b1;
+        #5 reset = 1'b0;
         #5 in = 1'b0;
         #5 in = 1'b1;
         #5 in = 1'b0;
+        #5 in = 1'b1;
         #100 $finish;
     end
 
     initial
     begin
-        $monitor("[%g] areset = %b, in = %b, out = %h", $time, areset, in, out);
+        $monitor("[%g] reset = %b, in = %b, out = %h", $time, reset, in, out);
     end
 
     initial
